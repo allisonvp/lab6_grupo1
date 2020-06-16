@@ -29,6 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .invalidateHttpSession(true);
 
         http.authorizeRequests()
+                .antMatchers("/post", "/post/**").hasAnyAuthority("USER", "ADMIN")
                 .anyRequest().permitAll();
     }
 
