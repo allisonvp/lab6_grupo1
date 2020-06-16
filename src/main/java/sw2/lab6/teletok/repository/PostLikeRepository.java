@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import sw2.lab6.teletok.entity.Post;
 import sw2.lab6.teletok.entity.PostComment;
 import sw2.lab6.teletok.entity.PostLike;
+import sw2.lab6.teletok.entity.User;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ public interface PostLikeRepository extends JpaRepository<PostLike, Integer> {
     int obtenerCantLikesPorPost();
 
     List<PostLike> findPostLikeByPost(Post post);
+    List<PostLike> findPostLikeByPostAndUser(Post post, User user);
+
 }
