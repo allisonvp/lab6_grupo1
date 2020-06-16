@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/teletok.iml" filepath="$PROJECT_DIR$/.idea/teletok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teletok.iml" filepath="$PROJECT_DIR$/teletok.iml" />
     </modules>
   </component>
 </project>
